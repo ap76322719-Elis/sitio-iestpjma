@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arquitectura de Plataformas y Servicios de TI | IESTP José María Arguedas</title>
+<meta name="description" content="Carrera de Arquitectura de Plataformas y Servicios de TI en el IESTP José María Arguedas. Forma profesionales en infraestructura, nube y arquitectura de sistemas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#inicio" class="navbar__brand">
+      <img src="img/apsti.png" alt="Logo IESTP José María Arguedas" class="navbar__logo-img">
+      <span class="navbar__brand-text">
+        <strong>IESTP José María Arguedas</strong>
+        <small>Arquitectura de Plataformas y Servicios de TI</small>
+      </span>
+    </a>
+
+    <nav class="navbar__nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#plan-estudios" class="nav-link">Plan de Estudios</a></li>       
+        <li><a href="#noticias" class="nav-link">Eventos</a></li>
+        <li><a href="bolsa.php" class="nav-link nav-link--external">Bolsa de Trabajo</a></li>
+      </ul>
+    </nav>
+
+    <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio" aria-label="Presentación de la carrera">
+    <div class="hero__slides" id="heroSlides">
+      <div class="hero__slide is-active" style="background-image: url('img/carrusel1.jpeg');"></div>
+      <div class="hero__slide" style="background-image: url('img/carrusel2.jpeg');"></div>
+      <div class="hero__slide" style="background-image: url('img/carrusel3.jpeg');"></div>
+    </div>
+
+    <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="Diapositiva anterior">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="Siguiente diapositiva">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <div class="hero__dots" id="heroDots" role="tablist" aria-label="Selecciona diapositiva"></div>
+  </section>
+
+  <!-- PLAN DE ESTUDIOS -->
+  <section class="propuesta" id="plan-estudios" aria-label="Plan de Estudios">
+    <div class="propuesta-header-area">
+      <h2 class="propuesta-title-fixed">Revisa nuestro PLAN DE ESTUDIOS</h2>
+    </div>
+
+    <div class="propuesta-wrapper theme-azul" id="propuestaWrapper">
+      <div class="propuesta-showcase">
+        
+        <div class="propuesta-showcase__display">
+          
+          <!-- Semestres I y II -->
+          <div class="propuesta-content is-active" id="content-semestre12">
+            <span class="propuesta-content__tag">01 — Primer Año</span>
+            <div class="plan-grid">
+              <div class="plan-col">
+                <h3>Semestre I</h3>
+                <ul class="propuesta-list">
+                  <li>Instalación y configuración de redes de comunicación</li>
+                  <li>Mantenimiento de equipos informáticos</li>
+                  <li>Sistemas Operativos</li>
+                  <li>Administración de soporte informático</li>
+                  <li>Comunicación oral</li>
+                  <li>Aplicaciones en internet</li>
+                </ul>
+              </div>
+              <div class="plan-col">
+                <h3>Semestre II</h3>
+                <ul class="propuesta-list">
+                  <li>Seguridad de redes de información</li>
+                  <li>Administración de redes</li>
+                  <li>Reparación de equipos de cómputo</li>
+                  <li>Gestión de recursos informáticos</li>
+                  <li>Interpretación y Producción de Textos</li>
+                  <li>Ofimática</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Semestres III y IV -->
+          <div class="propuesta-content" id="content-semestre34">
+            <span class="propuesta-content__tag">02 — Segundo Año</span>
+            <div class="plan-grid">
+              <div class="plan-col">
+                <h3>Semestre III</h3>
+                <ul class="propuesta-list">
+                  <li>Gestión de herramientas TIC</li>
+                  <li>Gestión de riesgos digitales y ciberseguridad</li>
+                  <li>Análisis y diseño de sistemas</li>
+                  <li>Fundamentos de Programación</li>
+                  <li>Base de datos</li>
+                  <li>Inglés para la Comunicación Oral</li>
+                  <li>Fundamentos de innovación tecnológica</li>
+                </ul>
+              </div>
+              <div class="plan-col">
+                <h3>Semestre IV</h3>
+                <ul class="propuesta-list">
+                  <li>Administración de base de datos</li>
+                  <li>Gestión de Proyectos Informáticos</li>
+                  <li>Mantenimiento de Sistema de Información</li>
+                  <li>Administración de servidores de red</li>
+                  <li>Comprensión y Redacción en inglés</li>
+                  <li>Innovación tecnológica</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Semestres V y VI -->
+          <div class="propuesta-content" id="content-semestre56">
+            <span class="propuesta-content__tag">03 — Tercer Año</span>
+            <div class="plan-grid">
+              <div class="plan-col">
+                <h3>Semestre V</h3>
+                <ul class="propuesta-list">
+                  <li>Diseño Front End</li>
+                  <li>Desarrollo Web</li>
+                  <li>Aplicaciones móviles</li>
+                  <li>Diseño e Implementación de los servicios TI</li>
+                  <li>Comportamiento ético</li>
+                </ul>
+              </div>
+              <div class="plan-col">
+                <h3>Semestre VI</h3>
+                <ul class="propuesta-list">
+                  <li>Diseño y producción de recursos Multimedia</li>
+                  <li>Gestión de Requerimientos para plataformas TI</li>
+                  <li>Gestión de proyectos web</li>
+                  <li>Gestión de Proyectos TI</li>
+                  <li>Solución de problemas</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="propuesta-showcase__navigation">
+          <button class="propuesta-tab is-active tab--azul-claro" onclick="switchPropuestaTab('semestre12', 'theme-azul', this)">
+            <div class="propuesta-tab__inner">
+              <h4>Semestres I y II</h4>
+              <svg class="propuesta-tab__arrow" width="32" height="32" viewBox="0 0 24 24" fill="none">
+                <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </button>
+
+          <button class="propuesta-tab tab--rojo" onclick="switchPropuestaTab('semestre34', 'theme-rojo', this)">
+            <div class="propuesta-tab__inner">
+              <h4>Semestres III y IV</h4>
+              <svg class="propuesta-tab__arrow" width="32" height="32" viewBox="0 0 24 24" fill="none">
+                <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </button>
+
+          <button class="propuesta-tab tab--gris" onclick="switchPropuestaTab('semestre56', 'theme-gris', this)">
+            <div class="propuesta-tab__inner">
+              <h4>Semestres V y VI</h4>
+              <svg class="propuesta-tab__arrow" width="32" height="32" viewBox="0 0 24 24" fill="none">
+                <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CAMPUS -->
+  <section class="infraestructura" id="infraestructura" aria-label="Infraestructura y laboratorios">
+    <div class="campus-header-area">
+      <h2 class="nankai-main-title">Campus</h2>
+    </div>
+
+    <div class="campus-mosaic-container">
+      
+      <article class="campus-tile campus-tile--tall" style="background-image: url('img/patio.jpeg');">
+        <div class="campus-tile__content">
+          <h3>Patio</h3>
+        </div>
+      </article>
+
+      <article class="campus-tile" style="background-image: url('img/lab1.jpeg');">
+        <div class="campus-tile__content">
+          <h3>Laboratorio 01</h3>
+        </div>
+      </article>
+
+      <article class="campus-tile" style="background-image: url('img/lab2.jpeg');">
+        <div class="campus-tile__content">
+          <h3>Laboratorio 02</h3>
+        </div>
+      </article>
+
+      <article class="campus-tile" style="background-image: url('img/lab3.jpeg');">
+        <div class="campus-tile__content">
+          <h3>Laboratorio 03</h3>
+        </div>
+      </article>
+
+      <article class="campus-tile" style="background-image: url('img/campo.jpeg');">
+        <div class="campus-tile__content">
+          <h3>Campo Deportivo</h3>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCIAS ARGUEDINAS -->
+  <section class="experiencias" aria-label="Experiencias Arguedinas">
+    <div class="experiencias__inner">
+      
+      <button class="exp-arrow exp-arrow--prev" id="expPrev" aria-label="Testimonio anterior">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <div class="experiencias__slides" id="expSlides">
+        
+        <div class="exp-slide is-active">
+          <div class="exp-slide__media">
+            <div class="exp-card-frame">
+              <img src="img/marisol.jpeg" alt="Fotografía de Marisol" class="exp-card-img">
+              <div class="exp-badge-bottom">
+                <small>Estudiante</small>
+              </div>
+            </div>
+          </div>
+          <div class="exp-slide__content">
+            <h3 class="exp-slide__author">MARISOL</h3>
+            <p class="exp-slide__career">Arquitectura de Plataformas y Servicios de TI</p>
+            <div class="exp-slide__quote-icon" aria-hidden="true">“</div>
+            <p class="exp-slide__quote">
+              El instituto nos brinda laboratorios de cómputo y servidores con tecnología actualizada, además de docentes altamente capacitados que nos preparan para el mercado laboral real.
+            </p>
+          </div>
+        </div>
+
+        <div class="exp-slide">
+          <div class="exp-slide__media">
+            <div class="exp-card-frame">
+              <img src="img/erik.jpeg" alt="Fotografía de Erik" class="exp-card-img">
+              <div class="exp-badge-bottom">
+                <small>Egresado</small>
+              </div>
+            </div>
+          </div>
+          <div class="exp-slide__content">
+            <h3 class="exp-slide__author">ERIK</h3>
+            <p class="exp-slide__career">Arquitectura de Plataformas y Servicios de TI</p>
+            <div class="exp-slide__quote-icon" aria-hidden="true">“</div>
+            <p class="exp-slide__quote">
+              Gracias a la formación práctica y los proyectos integradores en administración de servidores, logré potenciar mis habilidades técnicas y aspirar a mejores oportunidades en el sector.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="exp-arrow exp-arrow--next" id="expNext" aria-label="Siguiente testimonio">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+    </div>
+  </section>
+
+  <!-- NOTICIAS Y EVENTOS -->
+  <section class="noticias-seccion" id="noticias" aria-label="Noticias y Eventos de la Carrera">
+    <div class="noticias-seccion__inner">
+      
+      <div class="noticias-seccion__header">
+        <h2 class="noticias-seccion__title">Noticias y Eventos</h2>
+        <div class="noticias-seccion__tabs">
+          <button class="noticias-seccion__tab is-active" id="tabNoticias">Noticias</button>
+          <button class="noticias-seccion__tab" id="tabEventos">Eventos</button>
+        </div>
+      </div>
+
+      <div class="noticias-seccion__list is-active" id="panelNoticias">
+        
+        <article class="noticia-row">
+          <div class="noticia-row__media" style="background-image: url('img/inicio.png');"></div>
+          <div class="noticia-row__content">
+            <span class="noticia-row__date">14 de Abril del 2026</span>
+            <h3 class="noticia-row__heading">Inicio del periodo académico 2026-I y bienvenida a los ingresantes de APSTI.</h3>
+          </div>
+        </article>
+
+        <article class="noticia-row">
+          <div class="noticia-row__media" style="background-image: url('img/deporte.jpg');"></div>
+          <div class="noticia-row__content">
+            <span class="noticia-row__date">28 de Mayo del 2026</span>
+            <h3 class="noticia-row__heading">Participacion de la Carrera de APSTI en los juegos Deportivos</h3>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="noticias-seccion__list" id="panelEventos">
+        
+        <article class="noticia-row">
+          <div class="noticia-row__media" style="background-image: url('img/seminario.jpg');"></div>
+          <div class="noticia-row__content">
+            <span class="noticia-row__date">09 de Junio del 2026</span>
+            <h3 class="noticia-row__heading">Seminario presencial sobre Inteligencia Artificial aplicada a redes e infraestructura de TI.</h3>
+          </div>
+        </article>
+
+        <article class="noticia-row">
+          <div class="noticia-row__media" style="background-image: url('img/feria.jpg');"></div>
+          <div class="noticia-row__content">
+            <span class="noticia-row__date">19 de Octubre del 2026</span>
+            <h3 class="noticia-row__heading">Feria de Innovación Tecnológica: Exhibición de proyectos e infraestructura Cloud.</h3>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- Carga Font Awesome para obtener los íconos oficiales -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<footer class="footer">
+  <div class="footer__inner">
+    
+    <!-- Columna 1: Información Institucional -->
+    <div class="footer__about">
+      <span class="footer__brand">IESTP José María Arguedas</span>
+      <p>Formamos técnicos especialistas en Arquitectura de Plataformas y Servicios de TI, capaces de diseñar, implementar y administrar la infraestructura tecnológica que sostiene a las organizaciones.</p>
+    </div>
+
+    <!-- Columna 2: Contacto -->
+    <div class="footer__column">
+      <h3>Contacto</h3>
+      <ul class="footer__list">
+        <li>
+          <i class="fa-solid fa-phone icon-pink"></i>
+          <span style="color: rgba(255, 255, 255, 0.8);">964 868 607</span>
+        </li>
+        <li>
+          <i class="fa-regular fa-envelope icon-light"></i>
+          <a href="mailto:informes@iestpjma.edu.pe">informes@iestpjma.edu.pe</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-location-dot icon-pink"></i>
+          <span style="color: rgba(255, 255, 255, 0.8);">Av. José María Arguedas S/N, Huancayo, Peru, 12500</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Síguenos -->
+    <div class="footer__column">
+      <h3>Síguenos</h3>
+      <ul class="footer__list">
+        <li>
+          <i class="fa-brands fa-facebook icon-fb"></i>
+          <a href="https://www.facebook.com/computacionsicaya" target="_blank" rel="noopener noreferrer">Facebook Institucional</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-whatsapp icon-wa"></i>
+          <a href="https://wa.me/51945896830" target="_blank" rel="noopener noreferrer">WhatsApp Consultas</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Sección Inferior -->
+  <div class="footer__bottom">
+    <p>© 2026 IESTP José María Arguedas. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
